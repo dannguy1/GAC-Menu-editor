@@ -1,0 +1,47 @@
+{
+  "name": "gac-menu-editor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-picker/picker": "2.11.1",
+    "expo": "~54.0.0",
+    "expo-build-properties": "~1.0.10",
+    "expo-image-picker": "~17.0.11",
+    "expo-secure-store": "~15.0.8",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@babel/runtime": "^7.29.2",
+    "@testing-library/react-native": "^12.9.0",
+    "babel-preset-expo": "~54.0.10",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "roots": [
+      "<rootDir>",
+      "<rootDir>/../tests/mobile"
+    ],
+    "modulePaths": [
+      "<rootDir>/node_modules"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|@react-native|expo|@expo|@testing-library)/)"
+    ]
+  },
+  "private": true
+}

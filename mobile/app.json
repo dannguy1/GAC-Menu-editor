@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "GAC Menu Editor",
+    "slug": "gac-menu-editor",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.garlicandchives.menueditor",
+      "infoPlist": {
+        "NSCameraUsageDescription": "GAC Menu Editor needs camera access to photograph dishes for the menu.",
+        "NSPhotoLibraryUsageDescription": "GAC Menu Editor needs photo library access to select dish images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.garlicandchives.menueditor"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-image-picker",
+      "expo-secure-store"
+    ]
+  }
+}
